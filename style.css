@@ -13,20 +13,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: orangered;
+    background: url(./images/background\ image.jpg);
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
 
 }
 
 .container {
     width: 400%;
     max-width: 500px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.4);
     padding: 20px;
     border-radius: 16px;
     box-shadow: 0 5px 15px rgba(5, 131, 12, 0.1);
     height: 555px;
-    color: #1f1364;
+    color: black;
+    backdrop-filter: blur(10px);
+    border:rgba(255, 255, 255, 0.4)
 }
 
 .search-box {
@@ -64,8 +68,8 @@ body {
     border: none;
     font-size: 30px;
     outline: none;
-    padding: 0, 40px
-    cursor: pointer;
+    padding: 0, 40px;
+    cursor:  pointer;
 
 }
 
@@ -103,4 +107,38 @@ body {
     font-size: 24px;
     font-weight: 500;
     
+}
+
+.weather-details {
+    width: 100%;
+    bottom: 40px;
+    left: 0%;
+    position: obsolute;
+    padding: 0 20px;
+    display: flex;;
+}
+
+
+.weather-details .humidity, 
+.weather-details .wind {
+    display: flex;
+    text-align: center;
+    width: 50%;
+}
+
+.weather-details i {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.weather-details span {
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+}   
+
+.weather-details p {
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
 }
